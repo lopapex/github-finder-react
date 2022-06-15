@@ -1,14 +1,19 @@
 import { StrictMode } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 import App from './App';
 import { register } from './serviceWorkerRegistration';
 
-ReactDOM.render(
-	<StrictMode>
-		<App />
-	</StrictMode>,
-	document.getElementById('root')
-);
+const el = document.getElementById('root')
+if (el === null) throw new Error('Root container missing in index.html')
+
+const root = ReactDOM.createRoot(el)
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+)
 
 register();
+
+

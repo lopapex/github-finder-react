@@ -1,21 +1,19 @@
+import { CssBaseline } from '@mui/material';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './components/Layout';
+import MyRoutes from './components/MyRoutes';
+import { ThemeProvider } from './hooks/useTheme';
+
 const App = () => {
-  const x = 3;
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <BrowserRouter>
+        <CssBaseline />
+        <Layout>
+          <MyRoutes />
+        </Layout>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
