@@ -12,16 +12,18 @@ type props = {
 
 const InputSearch: FC<props> = ({ setLoading, setError }) => {
   const findUser = async (e: FormEvent) => {
-		if (!e.target[0].value.length) {
+    const value = e.target[0].value;
+		if (!value.length) {
 			return;
 		}
     try {
 			setLoading(true);
-      const userData = await getUserData(e.target[0].value);
+      const userData = await getUserData(value);
 			setError('');
 			console.log(userData);
     } catch (e) {
-			setError(e.message);
+			setError(e.response.data.message);
+      console.log(e.response);
     } finally {
 			setLoading(false);
 		}
