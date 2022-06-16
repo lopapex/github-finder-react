@@ -10,7 +10,6 @@ import { useNavigate } from 'react-router-dom';
 
 import ThemeSwitch from './ThemeSwitch';
 import { useTheme } from '../hooks/useTheme';
-
 interface Item {
   children?: React.ReactNode;
 }
@@ -22,7 +21,7 @@ const Layout: FC<Item> = ({ children }) => {
 
   return (
     <>
-      <AppBar style={{ background: isDark ? '#272727' : '#2E3B55' }} position='sticky'>
+      <AppBar style={{ background: isDark ? '#272727' : '#2E3B55' }}>
         <Container maxWidth='lg'>
           <Toolbar disableGutters sx={{ gap: 2 }}>
             <Typography sx={{ cursor: 'pointer' }} variant='h5' onClick={() => navigate('/')}>Github Finder</Typography>
