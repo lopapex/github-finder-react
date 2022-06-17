@@ -5,7 +5,6 @@ import Repos from '../pages/Repos';
 import NotFound from '../pages/NotFound';
 
 const MyRoutes = () => {
-
   return (
     <Routes>
       <Route path='/' element={<Home />} />

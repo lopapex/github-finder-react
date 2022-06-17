@@ -1,23 +1,5 @@
 import { createContext, Dispatch, FC, SetStateAction, useContext, useState } from 'react'
-
-type User = {
-  avatar_url: string
-  login: string
-  company: string
-  location: string
-  blog: string
-  created_at: string
-  followers: number
-  following: number
-  public_repos: number
-  public_gists: number
-}
-
-export type Org = {
-  avatar_url: string
-  login: string
-  description: string
-}
+import { User, Org } from '../utils/types'
 
 type UserInfo = {
   user: User
@@ -35,4 +17,4 @@ export const UserInfoProvider: FC = ({ children }) => {
   )
 }
 
-export const useUserInfo = () => useContext(UserInfoContext)
+export const useUserInfo = () => useContext(UserInfoContext);

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Avatar, Card, CardContent, Typography } from '@mui/material'
-import { Org } from '../hooks/useUserInfo'
+import { Org } from '../utils/types'
 
 type props = {
   org: Org

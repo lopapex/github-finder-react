@@ -1,8 +1,9 @@
 import Header from '../components/Header'
 import usePageTitle from '../hooks/usePageTitle'
-import { useUserInfo, Org } from '../hooks/useUserInfo'
+import { useUserInfo } from '../hooks/useUserInfo'
 import OrganizationCard from '../components/OrganizationCard'
 import { Grid } from '@mui/material'
+import { Org } from '../utils/types'
 
 const Organizations = () => {
   usePageTitle('Organizations')

@@ -3,8 +3,7 @@ import Paper from '@mui/material/Paper'
 import InputBase from '@mui/material/InputBase'
 import IconButton from '@mui/material/IconButton'
 import SearchIcon from '@mui/icons-material/Search'
-import { getUserData } from '../utils/github-api'
-import { useUserInfo } from '../hooks/useUserInfo'
+import useSearch from '../hooks/useSearch'
 
 type props = {
   setLoading: Dispatch<SetStateAction<boolean>>
@@ -12,22 +11,8 @@ type props = {
 }
 
 const InputSearch: FC<props> = ({ setLoading, setError }) => {
-  const[, setUserInfo] = useUserInfo();
+  const{findUser} = useSearch(setLoading, setError);
 
-  const findUser = async (e: FormEvent) => {
-    try {
-      setUserInfo(null);
-			setLoading(true);
-      const userData = await getUserData(e.target[0].value);
-			setError('');
-			setUserInfo(userData);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    } catch (e: any) {
-			setError(e.response.data.message);
-    } finally {
-			setLoading(false);
-		}
-  }
   return (
     <Paper
       component='form'
