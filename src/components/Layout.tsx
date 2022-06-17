@@ -40,6 +40,7 @@ const Layout: FC<Item> = ({ children }) => {
           flexDirection: 'column',
           alignItems: 'center',
           height: '100vh',
+          width: '800px',
           pt: 8,
           gap: 2,
         }}
