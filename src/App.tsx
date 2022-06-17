@@ -9,7 +9,7 @@ const App = () => {
   return (
     <UserInfoProvider>
       <ThemeProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="github-finder-react">
           <CssBaseline />
           <Layout>
             <MyRoutes />

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Github finder react",
+  "name": "Using github API v3 finds user and its organizations and repos.",
   "icons": [
     {
       "src": "favicon.ico",

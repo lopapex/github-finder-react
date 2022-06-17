@@ -1,5 +1,7 @@
 # Github finder
 
+You can find the project deployed [here](https://lopapex.github.io/github-finder-react/).
+
 ## Project setup
 
 ### Downloads dependencies based on `package.json`.
@@ -20,6 +22,11 @@ yarn run build
 ### Lints and fixes files
 ```cmd
 yarn lint
+```
+
+### Deploys
+```cmd
+yarn deploy
 ```
 
 ## Learn More
