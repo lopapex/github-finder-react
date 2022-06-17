@@ -11,13 +11,12 @@ type User = {
   following: number
   public_repos: number
   public_gists: number
-  html_url: string
 }
 
-type Org = {
+export type Org = {
   avatar_url: string
   login: string
-  url: string
+  description: string
 }
 
 type UserInfo = {

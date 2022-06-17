@@ -30,4 +30,4 @@ const Header: FC<Props> = ({ title }) => {
     </>
   )
 }
-export default Header
+export default Header;
