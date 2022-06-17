@@ -31,7 +31,7 @@ const InputSearch: FC<props> = ({ setLoading, setError }) => {
   return (
     <Paper
       component='form'
-      sx={{ p: '2px 4px', m: '50px 0 0 0', display: 'flex', alignItems: 'center', width: '100%' }}
+      sx={{ p: '2px 4px', mt: '34px', display: 'flex', alignItems: 'center', width: '100%' }}
       onSubmit={(e: FormEvent) => {
         e.preventDefault()
         findUser(e)

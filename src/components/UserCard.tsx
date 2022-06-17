@@ -11,16 +11,17 @@ import {
   Link,
 } from '@mui/material'
 import { FC } from 'react'
-import { useUserInfo } from '../hooks/useUserInfo';
+import { useUserInfo } from '../hooks/useUserInfo'
 import UserDetailLine from './UserDetailLine'
+import { Link as DomLink } from 'react-router-dom'
 
 const UserCard: FC = () => {
-  const [userInfo] = useUserInfo();
+  const [userInfo] = useUserInfo()
 
   const memberSince = () => {
-    if (!userInfo) return;
-    const date = new Date(userInfo?.user.created_at);
-    return date.toLocaleDateString('en');
+    if (!userInfo) return
+    const date = new Date(userInfo?.user.created_at)
+    return date.toLocaleDateString('en')
   }
 
   return (
@@ -64,11 +65,11 @@ const UserCard: FC = () => {
 
         <Box sx={{ flexGrow: 1 }} />
         {!!userInfo?.orgs.length && (
-          <Button size='small' variant="contained">
+          <Button size='small' variant='contained' component={DomLink} to='/organizations'>
             Organization
           </Button>
         )}
-        <Button size='small' variant="contained">
+        <Button size='small' variant='contained' component={DomLink} to='/repos'>
           Public repos
         </Button>
       </CardActions>
@@ -76,5 +77,4 @@ const UserCard: FC = () => {
   )
 }
 
-export default UserCard;
-
+export default UserCard
