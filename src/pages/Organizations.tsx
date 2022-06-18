@@ -15,7 +15,7 @@ const Organizations = () => {
 
       {userInfo && (
         <Grid container spacing={2}>
-          {userInfo?.orgs.map((org: Org) => (
+          {userInfo.orgs.map((org: Org) => (
             <Grid item xs={4} key={org.login}>
               <OrganizationCard org={org} />
             </Grid>
