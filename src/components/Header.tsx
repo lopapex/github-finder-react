@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import ArrowBack from '@mui/icons-material/ArrowBack';
 import Grid from '@mui/material/Grid';
 import Fab from '@mui/material/Fab';
@@ -12,6 +12,12 @@ type Props = {
 const Header: FC<Props> = ({ title }) => {
   const navigate = useNavigate();
   const [userInfo] = useUserInfo();
+
+  useEffect(() => {
+    if (!userInfo) {
+      navigate('/');
+    }
+  }, []);
 
   const handleClick = () => {
     navigate(-1);
