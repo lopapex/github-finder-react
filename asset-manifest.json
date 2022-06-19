@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/github-finder-react/static/js/main.5bca17a5.js",
+    "main.js": "/github-finder-react/static/js/main.a5578663.js",
     "service-worker.js": "/github-finder-react/service-worker.js",
     "index.html": "/github-finder-react/index.html",
-    "main.5bca17a5.js.map": "/github-finder-react/static/js/main.5bca17a5.js.map"
+    "main.a5578663.js.map": "/github-finder-react/static/js/main.a5578663.js.map"
   },
   "entrypoints": [
-    "static/js/main.5bca17a5.js"
+    "static/js/main.a5578663.js"
   ]
 }
