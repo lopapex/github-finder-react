@@ -23,7 +23,8 @@ const Header: FC<Props> = ({ title }) => {
           <ArrowBack />
         </Fab>
 
-        <h3>{`${userInfo.user.login}'s ${title}`}</h3>
+
+        <h3>{`${userInfo?.user.login}'s ${title}`}</h3>
 
         <p></p>
       </Grid>

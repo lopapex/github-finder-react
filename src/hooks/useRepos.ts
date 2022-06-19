@@ -13,7 +13,7 @@ const usePageTitle = () => {
     try {
       setRepos([]);
 			setLoading(true);
-      const repos = await getRepos(userInfo.user.login);
+      const repos = await getRepos(userInfo?.user.login);
 			setError('');
 			setRepos(repos);
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
