@@ -1,5 +1,5 @@
-import { createContext, Dispatch, FC, SetStateAction, useContext, useState } from 'react'
-import { User, Org } from '../utils/types'
+import { createContext, Dispatch, FC, SetStateAction, useContext, useState } from 'react';
+import { User, Org } from '../utils/types';
 
 type UserInfo = {
   user: User

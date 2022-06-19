@@ -1,6 +1,8 @@
 import { FC, useCallback, useMemo } from 'react';
-import { IconButton, Tooltip } from '@mui/material';
-import { DarkMode, LightMode } from '@mui/icons-material';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
+import DarkMode from '@mui/icons-material/DarkMode';
+import LightMode from '@mui/icons-material/LightMode';
 
 import { useTheme } from '../hooks/useTheme';
 

@@ -1,13 +1,13 @@
-import Header from '../components/Header'
-import usePageTitle from '../hooks/usePageTitle'
-import { useUserInfo } from '../hooks/useUserInfo'
-import OrganizationCard from '../components/OrganizationCard'
-import { Grid } from '@mui/material'
-import { Org } from '../utils/types'
+import Header from '../components/Header';
+import usePageTitle from '../hooks/usePageTitle';
+import { useUserInfo } from '../hooks/useUserInfo';
+import OrganizationCard from '../components/OrganizationCard';
+import Grid from '@mui/material/Grid';
+import { Org } from '../utils/types';
 
 const Organizations = () => {
-  usePageTitle('Organizations')
-  const [userInfo] = useUserInfo()
+  usePageTitle('Organizations');
+  const [userInfo] = useUserInfo();
 
   return (
     <>

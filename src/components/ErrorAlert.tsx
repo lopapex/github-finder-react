@@ -1,6 +1,8 @@
-import { FC, Dispatch, SetStateAction } from 'react'
-import { IconButton, Alert, Collapse } from '@mui/material'
-import CloseIcon from '@mui/icons-material/Close'
+import { FC, Dispatch, SetStateAction } from 'react';
+import IconButton from '@mui/material/IconButton';
+import Alert from '@mui/material/Alert';
+import Collapse from '@mui/material/Collapse';
+import CloseIcon from '@mui/icons-material/Close';
 
 type props = {
   error: string

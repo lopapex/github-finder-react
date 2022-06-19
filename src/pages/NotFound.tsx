@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
 import WarningIcon from '@mui/icons-material/Warning';
 
 import usePageTitle from '../hooks/usePageTitle';

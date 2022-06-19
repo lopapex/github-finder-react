@@ -1,5 +1,6 @@
-import { Typography, Grid } from '@mui/material'
-import { FC } from 'react'
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import { FC } from 'react';
 
 type props = {
   header: string

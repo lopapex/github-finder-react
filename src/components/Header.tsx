@@ -1,19 +1,20 @@
-import { FC } from 'react'
-import { ArrowBack } from '@mui/icons-material'
-import { Grid, Fab } from '@mui/material'
-import { useNavigate } from 'react-router-dom'
-import { useUserInfo } from '../hooks/useUserInfo'
+import { FC } from 'react';
+import ArrowBack from '@mui/icons-material/ArrowBack';
+import Grid from '@mui/material/Grid';
+import Fab from '@mui/material/Fab';
+import { useNavigate } from 'react-router-dom';
+import { useUserInfo } from '../hooks/useUserInfo';
 
 type Props = {
   title: string
 }
 
 const Header: FC<Props> = ({ title }) => {
-  const navigate = useNavigate()
-  const [userInfo] = useUserInfo()
+  const navigate = useNavigate();
+  const [userInfo] = useUserInfo();
 
   const handleClick = () => {
-    navigate(-1)
+    navigate(-1);
   }
 
   return (

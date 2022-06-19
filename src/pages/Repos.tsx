@@ -1,18 +1,16 @@
-import {
-  CircularProgress,
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-} from '@mui/material'
-import ErrorAlert from '../components/ErrorAlert'
-import Header from '../components/Header'
-import usePageTitle from '../hooks/usePageTitle'
-import useRepos from '../hooks/useRepos'
-import { Repo } from '../utils/types'
+import CircularProgress from '@mui/material/CircularProgress';
+import Paper from '@mui/material/Paper';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import ErrorAlert from '../components/ErrorAlert';
+import Header from '../components/Header';
+import usePageTitle from '../hooks/usePageTitle';
+import useRepos from '../hooks/useRepos';
+import { Repo } from '../utils/types';
 
 const Repos = () => {
   usePageTitle('Public repos')

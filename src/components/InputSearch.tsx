@@ -1,9 +1,9 @@
-import { FC, FormEvent, SetStateAction, Dispatch } from 'react'
-import Paper from '@mui/material/Paper'
-import InputBase from '@mui/material/InputBase'
-import IconButton from '@mui/material/IconButton'
-import SearchIcon from '@mui/icons-material/Search'
-import useSearch from '../hooks/useSearch'
+import { FC, FormEvent, SetStateAction, Dispatch } from 'react';
+import Paper from '@mui/material/Paper';
+import InputBase from '@mui/material/InputBase';
+import IconButton from '@mui/material/IconButton';
+import SearchIcon from '@mui/icons-material/Search';
+import useSearch from '../hooks/useSearch';
 
 type props = {
   setLoading: Dispatch<SetStateAction<boolean>>

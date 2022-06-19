@@ -1,10 +1,14 @@
-import { FC, useMemo } from 'react'
-import { AppBar, Box, Container, Toolbar, Typography } from '@mui/material'
-import { useNavigate } from 'react-router-dom'
+import { FC, useMemo } from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import { useNavigate } from 'react-router-dom';
 
-import ThemeSwitch from './ThemeSwitch'
-import { useTheme } from '../hooks/useTheme'
-import { useUserInfo } from '../hooks/useUserInfo'
+import ThemeSwitch from './ThemeSwitch';
+import { useTheme } from '../hooks/useTheme';
+import { useUserInfo } from '../hooks/useUserInfo';
 interface Item {
   children?: React.ReactNode
 }

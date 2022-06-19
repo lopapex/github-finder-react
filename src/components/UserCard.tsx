@@ -1,19 +1,18 @@
-import {
-  Typography,
-  Grid,
-  Avatar,
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  Chip,
-  Link,
-} from '@mui/material'
-import { FC } from 'react'
-import { useUserInfo } from '../hooks/useUserInfo'
-import UserDetailLine from './UserDetailLine'
-import { Link as DomLink } from 'react-router-dom'
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Avatar from '@mui/material/Avatar';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Chip from '@mui/material/Chip';
+import Link from '@mui/material/Link';
+
+import { FC } from 'react';
+import { useUserInfo } from '../hooks/useUserInfo';
+import UserDetailLine from './UserDetailLine';
+import { Link as DomLink } from 'react-router-dom';
 
 const UserCard: FC = () => {
   const [userInfo] = useUserInfo()

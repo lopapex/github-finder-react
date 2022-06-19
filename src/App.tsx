@@ -1,9 +1,9 @@
-import { CssBaseline } from '@mui/material'
-import { BrowserRouter } from 'react-router-dom'
-import Layout from './components/Layout'
-import MyRoutes from './components/MyRoutes'
-import { ThemeProvider } from './hooks/useTheme'
-import { UserInfoProvider } from './hooks/useUserInfo'
+import CssBaseline from '@mui/material/CssBaseline';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './components/Layout';
+import MyRoutes from './components/MyRoutes';
+import { ThemeProvider } from './hooks/useTheme';
+import { UserInfoProvider } from './hooks/useUserInfo';
 
 const App = () => {
   return (
